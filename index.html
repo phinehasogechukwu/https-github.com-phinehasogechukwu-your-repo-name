@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBATAKU PHINEHAS | Portfolio</title>
+  <style>
+    :root{
+      --primary:#0f172a;
+      --accent:#38bdf8;
+      --bg:#020617;
+      --card:#020617;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+    body{background:linear-gradient(120deg,#020617,#020617);color:var(--text);line-height:1.6}
+    header{padding:80px 20px;text-align:center}
+    header h1{font-size:3rem;margin-bottom:10px}
+    header span{color:var(--accent)}
+    header p{color:var(--muted);max-width:700px;margin:auto}
+
+    section{padding:70px 10%;}
+    h2{font-size:2rem;margin-bottom:30px;text-align:center}
+
+    .about,.skills,.projects,.gallery,.contact{max-width:1100px;margin:auto}
+
+    .about p{text-align:center;color:var(--muted)}
+
+    .skills-grid,.projects-grid,.gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+    .card{
+      background:#020617;
+      padding:25px;
+      border-radius:18px;
+      box-shadow:0 0 20px rgba(56,189,248,.15);
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-6px)}
+
+    .skills-grid .card{text-align:center}
+    .skills-grid h3{color:var(--accent)}
+
+    .projects-grid h3{margin-bottom:10px}
+    .projects-grid p{color:var(--muted)}
+
+    .gallery-grid img{
+      width:100%;
+      border-radius:16px;
+      box-shadow:0 0 15px rgba(56,189,248,.2)
+    }
+
+    footer{text-align:center;padding:40px;color:var(--muted)}
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 28px;
+      background:var(--accent);
+      color:#020617;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MBATAKU <span>PHINEHAS</span> OGECHUKWU</h1>
+  <p>Cyber Security & Computer Science Student | Lincoln University, NUK Keffi<br>Based in Abuja (Lugbe – Airport Road)</p>
+  <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Cyber Security and Computer Science student with strong interest in ethical hacking, secure systems,
+    and modern web technologies. I enjoy solving problems through code, learning new security techniques, and building
+    professional projects that make real impact.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card"><h3>HTML5</h3><p>Semantic & responsive layouts</p></div>
+    <div class="card"><h3>CSS3</h3><p>Modern UI, animations, layouts</p></div>
+    <div class="card"><h3>JavaScript</h3><p>Interactive & dynamic interfaces</p></div>
+    <div class="card"><h3>Cyber Security</h3><p>Basic penetration testing & security awareness</p></div>
+    <div class="card"><h3>Networking</h3><p>IP addressing, protocols, troubleshooting</p></div>
+    <div class="card"><h3>Problem Solving</h3><p>Logical thinking & debugging</p></div>
+  </div>
+</section>
+
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>Campus Lost & Found System</h3>
+      <p>A web-based system that allows students to report and recover lost items securely using HTML, CSS & JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive and professional portfolio showcasing skills, projects, and contact details.</p>
+    </div>
+    <div class="card">
+      <h3>Basic Cyber Security Toolkit</h3>
+      <p>Simple scripts and tools for password strength checking and security awareness demonstrations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Code Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://via.placeholder.com/400x250?text=HTML+Code" alt="HTML code">
+    <img src="https://via.placeholder.com/400x250?text=CSS+Design" alt="CSS design">
+    <img src="https://via.placeholder.com/400x250?text=JavaScript" alt="JavaScript code">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center;color:var(--muted)">
+    Email: phinehas@example.com <br>
+    Location: Abuja, Nigeria
+  </p>
+</section>
+
+<footer>
+  © 2026 MBATAKU PHINEHAS OGECHUKWU | All Rights Reserved
+</footer>
+
+</body>
+</html>
